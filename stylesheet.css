@@ -129,27 +129,27 @@ header .menu-icon {
 .banner {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
 }
 
 .slides-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    height: 100%;
+    height: auto;
 }
 
 .slide {
     position: relative;
     min-width: 100%;
-    height: 100%;
-    opacity: 0;
+    height: auto;
+    opacity: 50%;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -159,22 +159,10 @@ header .menu-icon {
 
 .slide img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     object-position: center;
 }
-
-/* .caption {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 24px;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 10;
-} */
 
 .indicators {
     position: absolute;
@@ -199,27 +187,6 @@ header .menu-icon {
     background-color: #303030;
 }
 
-/* .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-} */
-
-/* Adjusted styling for banner member and text if needed */
 .banner-member {
     position: relative;
     width: 100%;
@@ -244,4 +211,63 @@ header .menu-icon {
     text-align: center;
     font-weight: bold;
     z-index: 10;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .banner-text {
+        font-size: 48px;
+        /* Adjust font size */
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .banner-text {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .banner-text {
+        font-size: 28px;
+    }
+
+    .slides-container {
+        height: auto;
+        /* Adjust banner height */
+    }
+
+    .indicators {
+        gap: 5px;
+        /* Adjust indicator spacing */
+    }
+
+    .indicators button {
+        width: 7px;
+        height: 7px;
+    }
+
+    header .logo,
+    header .menu-icon {
+        position: relative;
+        font-weight: bold;
+        transition: 0.6s;
+        height: 15px;
+    }
+
+    header.sticky {
+        padding: 20px 40px;
+        background: white;
+    }
 }

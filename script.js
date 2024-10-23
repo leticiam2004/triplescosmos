@@ -8,7 +8,6 @@ const indicators = document.querySelectorAll('.indicators button');
 let currentIndex = 0;
 let interval;
 
-// Function to update the slide and indicator
 function updateSlide(index) {
     slides.forEach((slide, i) => {
         slide.classList.toggle('active', i === index);
@@ -19,24 +18,10 @@ function updateSlide(index) {
     });
 }
 
-// Function to move to the next slide automatically
 function nextSlide() {
     currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
     updateSlide(currentIndex);
 }
-
-// Event listeners for navigation buttons
-document.querySelector('.prev').addEventListener('click', () => {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
-    updateSlide(currentIndex);
-    resetAutoSlide();
-});
-
-document.querySelector('.next').addEventListener('click', () => {
-    currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
-    updateSlide(currentIndex);
-    resetAutoSlide();
-});
 
 // Event listeners for indicators
 indicators.forEach((indicator, i) => {
