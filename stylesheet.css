@@ -49,10 +49,22 @@
 
 @font-face {
     font-family: 'Pretendard';
-    src: url(/fonts/Pretendard-Regular.otf) format('truetype') font-weight-normal,
-        url(/fonts/Pretendard-SemiBold.otf) format('truetype') font-weight-semibold,
-        url(/fonts/Pretendard-Bold.otf) format('truetype') font-weight-bold;
+    src: url(/fonts/Pretendard-Regular.otf) format('truetype');
+    font-weight: normal;
 }
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(/fonts/Pretendard-SemiBold.otf) format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(/fonts/Pretendard-Bold.otf) format('truetype');
+    font-weight: bold;
+}
+
 
 .name-btn {
     display: inline-flex;
@@ -175,7 +187,7 @@ header .menu-icon {
     position: relative;
     min-width: 100%;
     height: auto;
-    opacity: 50%;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
