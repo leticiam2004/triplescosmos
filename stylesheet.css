@@ -65,8 +65,113 @@
     font-weight: bold;
 }
 
+#seoyeon {
+    background-color: var(--s01);
+}
+
+#hyerin {
+    background-color: var(--s02);
+}
+
+#jiwoo {
+    background-color: var(--s03);
+    color: black;
+}
+
+#chaeyeon {
+    background-color: var(--s04);
+}
+
+#yooyeon {
+    background-color: var(--s05);
+}
+
+#soomin {
+    background-color: var(--s06);
+}
+
+#nakyoung {
+    background-color: var(--s07);
+}
+
+#yubin {
+    background-color: var(--s08);
+    color: black;
+}
+
+#kaede {
+    background-color: var(--s09);
+    color: black;
+}
+
+#dahyun {
+    background-color: var(--s10);
+    color: black;
+}
+
+#kotone {
+    background-color: var(--s11);
+    color: black;
+}
+
+#yeonji {
+    background-color: var(--s12);
+}
+
+#nien {
+    background-color: var(--s13);
+}
+
+#sohyun {
+    background-color: var(--s14);
+}
+
+#xinyu {
+    background-color: var(--s15);
+}
+
+#mayu {
+    background-color: var(--s16);
+}
+
+#lynn {
+    background-color: var(--s17);
+}
+
+#joobin {
+    background-color: var(--s18);
+    color: black;
+}
+
+#hayeon {
+    background-color: var(--s19);
+    color: black;
+}
+
+#shion {
+    background-color: var(--s20);
+}
+
+#chaewon {
+    background-color: var(--s21);
+}
+
+#sullin {
+    background-color: var(--s22);
+}
+
+#seoah {
+    background-color: var(--s23);
+    color: black;
+}
+
+#jiyeon {
+    background-color: var(--s24);
+}
+
 
 .name-btn {
+    margin: 5px;
     display: inline-flex;
     padding: 10px 20px;
     justify-content: center;
@@ -85,7 +190,7 @@
     width: 300px;
     height: 400px;
     flex-shrink: 0;
-    border-radius: 5px;
+    border-radius: 15px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -104,6 +209,24 @@
     width: 100%;
     box-sizing: border-box;
 }
+
+.carousel-container {
+    width: 100%;
+    /* or a fixed width */
+    overflow-x: auto;
+    /* Allow horizontal scrolling */
+    overflow-y: hidden;
+    /* Prevent vertical scrolling */
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.carousel {
+    display: flex;
+    gap: 1%;
+    /* Align cards in a row */
+}
+
 
 .banner-member {
     position: relative;
