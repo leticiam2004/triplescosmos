@@ -187,14 +187,15 @@
 
 .member-card {
     display: flex;
-    width: 300px;
-    height: 400px;
-    flex-shrink: 0;
+    flex: 0 0 auto; /* Prevents shrinking or growing */
+    width: 300px; /* Default width */
+    height: 400px; /* Default height */
     border-radius: 15px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
+    margin-right: 10px; /* Optional margin between cards */
+    overflow: hidden;
 }
 
 .member-name {
@@ -354,6 +355,10 @@ header .menu-icon {
     .banner-text {
         font-size: 48px;
     }
+    .member-card {
+        width: 300px; /* Smaller width for medium screens */
+        height: 350px; /* Adjust height if necessary */
+    }
 }
 
 @media (max-width: 900px) {
@@ -363,6 +368,10 @@ header .menu-icon {
 
     .banner-text {
         font-size: 36px;
+    }
+    .member-card {
+        width: 250px; /* Smaller width for smaller screens */
+        height: 300px; /* Adjust height if necessary */
     }
 }
 
@@ -399,5 +408,12 @@ header .menu-icon {
     header.sticky {
         padding: 20px 40px;
         background: white;
+    }
+    .member-card {
+        width: 200px; /* Smallest width for mobile screens */
+        height: 250px; /* Adjust height if necessary */
+    }
+    .member-name {
+        font-size: 24px;
     }
 }
