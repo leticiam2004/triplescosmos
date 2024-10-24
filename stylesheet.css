@@ -212,11 +212,8 @@
 
 .carousel-container {
     width: 100%;
-    /* or a fixed width */
     overflow-x: auto;
-    /* Allow horizontal scrolling */
     overflow-y: hidden;
-    /* Prevent vertical scrolling */
     white-space: nowrap;
     padding: 10px 0;
 }
@@ -224,7 +221,6 @@
 .carousel {
     display: flex;
     gap: 1%;
-    /* Align cards in a row */
 }
 
 
