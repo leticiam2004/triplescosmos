@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSEMBLE</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="logo/triples-white.png">
+    <script>
+        // Step 1: Load the header from an external HTML file
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("header.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.body.insertAdjacentHTML("afterbegin", data);
+
+                    // Step 2: Add the sticky effect once the header is inserted
+                    var header = document.querySelector("header");
+
+                    // Ensure header exists before adding scroll listener
+                    if (header) {
+                        window.addEventListener("scroll", function () {
+                            header.classList.toggle("sticky", window.scrollY > 0);
+                        });
+                    }
+                })
+                .catch((error) => console.error("Error loading header:", error));
+        });
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.body.insertAdjacentHTML("beforeend", data); // Insert footer at the end of body
+            })
+            .catch((error) => console.error("Error loading footer:", error));
+    </script>
+</head>
+
+<body>
+    <div class="parent">
+        <img class="album-banner" src="https://iili.io/2BIBCN4.jpg" />
+        <img class="album-logo" src="https://iili.io/2BQxoBI.png" />
+      </div>
+    
+    
+    <div id="carousel-container"></div>
+</body>
+
+</html>

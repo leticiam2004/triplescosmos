@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S1 | SEOYEON</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="logo/triples.png">
+    <script>
+        // Step 1: Load the header from an external HTML file
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("header.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.body.insertAdjacentHTML("afterbegin", data);
+
+                    // Step 2: Add the sticky effect once the header is inserted
+                    var header = document.querySelector("header");
+
+                    // Ensure header exists before adding scroll listener
+                    if (header) {
+                        window.addEventListener("scroll", function () {
+                            header.classList.toggle("sticky", window.scrollY > 0);
+                        });
+                    }
+                })
+                .catch((error) => console.error("Error loading header:", error));
+        });
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.body.insertAdjacentHTML("beforeend", data); // Insert footer at the end of body
+            })
+            .catch((error) => console.error("Error loading footer:", error));
+    </script>
+</head>
+
+<body>
+    <section class="banner-member">
+        <div>
+            <img src="https://iili.io/2BIdmAB.jpg" alt="Seoyeon" />
+            <h1 class="banner-text">Seoyeon</h1>
+        </div>
+    </section>
+    <section class="member-info">
+        <!-- info -->
+
+        <h1>Seoyeon</h1>
+        <div class="name-btn" id="assemble">
+            <a href="album-02-ASSEMBLE.html">ASSEMBLE</a>
+        </div>
+        <div class="name-btn" id="aesthetic">
+            <a href="album-03-AESTHETIC.html">+(KR)ystal Eyes</a>
+        </div>
+        <div class="name-btn" id="muhan">
+            <a href="album-04-MUHAN.html">LOVElution</a>
+        </div>
+        <div class="info-row">
+            <div class="info-column">
+                <p>S1 윤서연은 첫 번째 S이자 tripleS의 시작점이 된 S이다.</p>
+                <p>S1 Yoon Seo-yeon is the first 'S' and the starting point of tripleS.</p>
+            </div>
+            <div class="info-column">
+                <h1>Profile</h1>
+                <table>
+                    <tr>
+                        <th>이름 | Name</th>
+                        <td>윤서연 (尹舒姸, Yoon SeoYeon)</td>
+                    </tr>
+                    <tr>
+                        <th>국적 | Nationality</th>
+                        <td>대한민국 | Republic of Korea</td>
+                    </tr>
+                    <tr>
+                        <th>생일 | Birthday</th>
+                        <td>2003/08/06</td>
+                    </tr>
+                    <tr>
+                        <th>MBTI</th>
+                        <td>ISFP</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="member-gallery">
+        <!-- gallery -->
+        <h1>Gallery</h1>
+        <div class="row">
+            <div class="column">
+                <img src="https://iili.io/2BIdmAB.jpg" alt="">
+            </div>
+
+            <div class="column">
+                <img src="https://iili.io/2BIdmAB.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="member-signals">
+        <!-- signals -->
+        <h1>Signals</h1>
+        <div class="youtube-div">
+            <iframe frameBorder="0" src="https://www.youtube.com/embed/jn2hiI7rqTA">
+            </iframe>
+            <iframe frameBorder="0" src="https://www.youtube.com/embed/jn2hiI7rqTA">
+            </iframe>
+            <iframe frameBorder="0" src="https://www.youtube.com/embed/jn2hiI7rqTA">
+            </iframe>
+        </div>
+    </section>
+    <section class="member-dimensions">
+        <!-- dimensions -->
+        <h1>Dimensions</h1>
+    </section>
+    <div id="member-carousel-container"></div>
+    <!-- footer -->
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+@media (max-width: 1200px) {
+	.slides {
+		height: auto;
+	}
+
+	.slides-container {
+		height: auto;
+	}
+
+	header {
+		padding: 20px 50px;
+	}
+
+	.banner-text {
+		font-size: 5rem;
+	}
+
+	.member-card {
+		border-radius: 7px;
+		width: 263px;
+		height: 350px;
+	}
+
+	.album-card {
+		width: 200px;
+		height: 200px;
+	}
+
+}
+
+@media (max-width: 900px) {
+	.slides {
+		height: auto;
+	}
+
+	.slides-container {
+		height: auto;
+	}
+
+	header {
+		padding: 15px 30px;
+	}
+
+	.banner-text {
+		font-size: 4rem;
+	}
+
+	.member-card {
+		width: 225px;
+		height: 300px;
+	}
+
+	.album-card {
+		width: 170px;
+		height: 170px;
+	}
+	.banner-member img {
+		height: 60vh;
+	}
+	.info-row {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		padding: 10px 20px;
+	}
+
+	.banner-text {
+		font-size: 3rem;
+	}
+
+	.slides-container {
+		height: auto;
+	}
+
+	.indicators {
+		gap: 5px;
+	}
+
+	.indicators button {
+		width: 7px;
+		height: 7px;
+	}
+
+	header .logo,
+	header .menu-icon {
+		position: relative;
+		font-weight: bold;
+		transition: 0.6s;
+		height: 15px;
+	}
+
+	.logo-white {
+		height: 15px;
+	}
+
+	footer {
+		height: 20vh;
+	}
+
+	.footer-content,
+	hr {
+		width: 80vw;
+		margin-top: 1rem;
+	}
+
+	header.sticky {
+		padding: 20px 40px;
+		background: white;
+	}
+
+	.member-card {
+		height: 173px;
+		width: 130px;
+	}
+
+	.member-name {
+		font-size: 1rem;
+	}
+
+	.album-card {
+		width: 120px;
+		height: 120px;
+		border-radius: 6px;
+	}
+
+	.carousel-container-albums {
+		height: 20vh;
+	}
+
+	.carousel-container {
+		padding: 20px 10px;
+	}
+
+	.row {
+		width: 90vw;
+		margin-top: 1vh;
+	}
+
+	.column img {
+		border-radius: 4px;
+		margin: 2px;
+	}
+
+	.column {
+		padding: 0 2px;
+	}
+
+	#assemble24-logo {
+		width: 70vw;
+	}
+
+	.banner-member img {
+		height: 50vh;
+	}
+
+	.member-info,
+	.member-gallery,
+	.member-signals,
+	.member-dimensions {
+		width: 80vw;
+		margin: auto;
+		margin-top: 3vh;
+		margin-bottom: 3vh;
+	}
+
+	.name-btn {
+		font-size: 0.6rem;
+	}
+
+	.info-row,
+	.youtube-div {
+		flex-direction: column;
+	}
+
+	.youtube-div iframe {
+		max-width: 100vh;
+		height: auto;
+		margin-top: 10px;
+	}
+
+	.modal-content {
+		max-width: 30vh;
+	}
+
+	.subtext h2 {
+		font-size: 1rem;
+	}
+
+	.parent {
+		height: 100%;
+	}
+
+	.album-logo {
+		max-width: 20vh;
+	}
+
+	#logo-aaa {
+		max-width: 15vh;
+	}
+}

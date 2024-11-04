@@ -1,0 +1,626 @@
+:root {
+	/* members */
+	--s01: #17A7FE;
+	--s02: #8801FF;
+	--s04: #98C649;
+	--s05: #D10A70;
+	--s06: #FC83A5;
+	--s07: #6599A4;
+	--s10: #FBA0E3;
+	--s11: #FEE002;
+	--s12: #5974FF;
+	--s13: #FF953F;
+	--s14: #1222B5;
+	--s15: #D51312;
+	--s16: #FE8E76;
+	--s17: #AB63B4;
+	--s19: #52D8BB;
+	--s20: #FF428A;
+	--s21: #C7A4DC;
+	--s22: #7BBA8D;
+	--s24: #FFAB62;
+
+	/* black txt */
+	--s23: #CFF3FF;
+	--s18: #B7F54C;
+	--s08: #FFE3E2;
+	--s09: #FFC936;
+	--s03: #FFFC02;
+
+	/* albums */
+	--acidangelfromasia: #ED0B57;
+	--assemble: #000000;
+	--krystaleyes: #F9ACA4;
+	--lovelution: #008DFF;
+	--evolution: #C43E33;
+	--aria: #C9A3C8;
+	--nxt: #383838;
+	--glow: #F2A9C9;
+	--visionaryvision: #E16947;
+	--hachi: #D7606E;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Pretendard', sans-serif;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url(/fonts/Pretendard-Regular.otf) format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url(/fonts/Pretendard-SemiBold.otf) format('opentype');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url(/fonts/Pretendard-Bold.otf) format('opentype');
+	font-weight: bold;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #EEE;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #666;
+}
+
+body {
+	background-color: #F5F5F5;
+	font-family: 'Pretendard', sans-serif;
+
+}
+
+#seoyeon {
+	background-color: var(--s01);
+}
+
+#hyerin {
+	background-color: var(--s02);
+}
+
+#jiwoo {
+	background-color: var(--s03);
+	color: black;
+}
+
+#chaeyeon {
+	background-color: var(--s04);
+}
+
+#yooyeon {
+	background-color: var(--s05);
+}
+
+#soomin {
+	background-color: var(--s06);
+}
+
+#nakyoung {
+	background-color: var(--s07);
+}
+
+#yubin {
+	background-color: var(--s08);
+	color: black;
+}
+
+#kaede {
+	background-color: var(--s09);
+	color: black;
+}
+
+#dahyun {
+	background-color: var(--s10);
+	color: black;
+}
+
+#kotone {
+	background-color: var(--s11);
+	color: black;
+}
+
+#yeonji {
+	background-color: var(--s12);
+}
+
+#nien {
+	background-color: var(--s13);
+}
+
+#sohyun {
+	background-color: var(--s14);
+}
+
+#xinyu {
+	background-color: var(--s15);
+}
+
+#mayu {
+	background-color: var(--s16);
+}
+
+#lynn {
+	background-color: var(--s17);
+}
+
+#joobin {
+	background-color: var(--s18);
+	color: black;
+}
+
+#hayeon {
+	background-color: var(--s19);
+	color: black;
+}
+
+#shion {
+	background-color: var(--s20);
+}
+
+#chaewon {
+	background-color: var(--s21);
+}
+
+#sullin {
+	background-color: var(--s22);
+}
+
+#seoah {
+	background-color: var(--s23);
+	color: black;
+}
+
+#jiyeon {
+	background-color: var(--s24);
+}
+
+/* albums id */
+#aesthetic {
+	background-color: var(--krystaleyes);
+}
+
+#access {
+	background-color: var(--acidangelfromasia);
+}
+
+#assemble {
+	background-color: var(--assemble);
+}
+
+#muhan {
+	background-color: var(--lovelution);
+}
+
+#mujuk {
+	background-color: var(--evolution);
+}
+
+#structureofsadness {
+	background-color: var(--aria);
+}
+
+#justdoit {
+	background-color: var(--nxt);
+}
+
+#innerdance {
+	background-color: var(--glow);
+}
+
+#performante {
+	background-color: var(--visionaryvision);
+}
+
+/* header */
+a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 100000;
+}
+
+header.sticky {
+	padding: 20px 100px;
+	background: white;
+}
+
+header .logo,
+header .menu-icon {
+	position: relative;
+	font-weight: bold;
+	transition: 0.6s;
+	height: 30px;
+}
+
+.logo-white {
+	filter: invert();
+	position: relative;
+	transition: 0.6ws;
+	height: 30px;
+}
+
+header .logo:hover,
+.logo-white:hover,
+.menu-icon:hover {
+	transform: scale(1.1);
+}
+
+/* index */
+.name-btn {
+	margin-bottom: 10px;
+	margin-right: 10px;
+	display: inline-flex;
+	padding: 8px 15px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	color: white;
+	font-size: 1rem;
+	word-wrap: break-word
+}
+
+.member-card {
+	display: flex;
+	flex: 0 0 auto;
+	width: 300px;
+	height: 400px;
+	border-radius: 15px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+.member-name {
+	font-weight: bold;
+	font-size: 2rem;
+	padding: 20px;
+	color: white;
+	font-family: 'Pretendard', sans-serif;
+	z-index: 1;
+	text-align: left;
+	align-self: flex-end;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.album-card {
+	z-index: 1;
+	display: flex;
+	flex: 0 0 auto;
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 10px;
+	overflow: hidden;
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+}
+
+.carousel-container,
+.carousel-container-albums {
+	background-color: #DCDCDC;
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	padding: 50px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 5vh;
+}
+
+.carousel {
+	display: flex;
+	gap: 2%;
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.slides-container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+.slides {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	height: auto;
+}
+
+.slide {
+	position: relative;
+	min-width: 100%;
+	height: auto;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+	opacity: 1;
+}
+
+.slide img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+}
+
+.indicators {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 10px;
+	z-index: 10;
+}
+
+.indicators button {
+	width: 0.625rem;
+	height: 0.625rem;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	cursor: pointer;
+}
+
+.indicators .active {
+	background-color: #303030;
+}
+
+.subtext {
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 5%;
+	font-weight: bold;
+	color: #222;
+}
+
+#assemble24-logo {
+	width: 50vw;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+}
+
+/* member pages */
+.banner-member {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.banner-member img {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	object-position: center;
+}
+
+.banner-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 6rem;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	z-index: 10;
+}
+
+.member-info,
+.member-gallery,
+.member-signals,
+.member-dimensions {
+	width: 60vw;
+	margin: auto;
+	margin-top: 3vh;
+	margin-bottom: 2vh;
+}
+
+.member-gallery .row {
+	width: 100%;
+}
+
+.member-gallery .column {
+	flex: 50%;
+	max-width: 50%;
+	text-align: center;
+}
+
+.youtube-div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.youtube-div iframe {
+	flex: 1;
+	max-width: 33%;
+	height: auto;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+p {
+	font-size: 14px;
+}
+
+table {
+	text-align: left;
+	width: 100%;
+}
+
+th,
+td {
+	font-size: 14px;
+	border-bottom: 1px solid #666;
+	padding-top: 10px;
+	padding-bottom: 3px;
+}
+
+th {
+	width: 40%;
+}
+
+.info-row {
+	display: flex;
+}
+
+.info-column {
+	flex: 50%;
+}
+
+footer {
+	background-color: black;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-content {
+	width: 60vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-logos-right {
+	display: flex;
+	gap: 1rem;
+}
+
+hr {
+	width: 60vw;
+	border: 1px solid #fff;
+	margin-top: 2rem;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	width: 70vw;
+	margin: auto;
+	justify-content: center;
+}
+
+.column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+	text-align: center;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+/* .hover-image {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-image:hover {
+    opacity: 0;
+}
+
+.hover-image:hover::after {
+    content: attr(data-hover);
+    background: url(attr(data-hover)) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+} */
+
+/* album pages */
+.parent {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.album-banner {
+	position: relative;
+	width: 100%;
+	filter: brightness(0.6)
+}
+
+.album-logo {
+	position: absolute;
+	height: auto;
+	max-width: 60vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: drop-shadow(0 0 10px white);
+}
+
+#logo-aaa {
+	max-width: 40vh;
+}
+
+/* responsive */
+

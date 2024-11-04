@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triplescosmos</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="logo/triples.png">
+    <script>
+        // Step 1: Load the header from an external HTML file
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("header.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.body.insertAdjacentHTML("afterbegin", data);
+
+                    // Step 2: Add the sticky effect once the header is inserted
+                    var header = document.querySelector("header");
+
+                    // Ensure header exists before adding scroll listener
+                    if (header) {
+                        window.addEventListener("scroll", function () {
+                            header.classList.toggle("sticky", window.scrollY > 0);
+                        });
+                    }
+                })
+                .catch((error) => console.error("Error loading header:", error));
+        });
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.body.insertAdjacentHTML("beforeend", data); // Insert footer at the end of body
+            })
+            .catch((error) => console.error("Error loading footer:", error));
+    </script>
+
+</head>
+
+<body>
+    <section class="banner">
+        <div class="slides-container">
+            <div class="slides">
+                <div class="slide active">
+                    <a href="album-10-PERFORMANTE.html">
+                        <img src="https://iili.io/2BIBEiP.png" alt="Visionary Vision - Performante" />
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="album-09-InnerDance.html">
+                        <img src="https://iili.io/2BIBxx2.jpg" alt="GLOW - Inner Dance" />
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="album-08-ASSEMBLE24.html">
+                        <img src="https://iili.io/2BIBBRf.jpg" alt="Assemble 24" />
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="album-07-JustDoIt.html">
+                        <img src="https://iili.io/2BIBIi7.jpg" alt="NXT - Just Do It" />
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="album-06-StructureOfSadness.html">
+                        <img src="https://iili.io/2BIBcDQ.jpg" alt="Aria - Structure of Sadness" />
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="album-05-MUJUK.html">
+                        <img src="https://iili.io/2BIBAle.jpg" alt="EVOLution - Mujuk" />
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="album-04-MUHAN.html">
+                        <img src="https://iili.io/2BIBRUu.jpg" alt="LOVElution - Muhan" />
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="album-03-AESTHETIC.html">
+                        <img src="https://iili.io/2BIBFln.jpg" alt="Krystal Eyes - Aesthetic" />
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="album-02-ASSEMBLE.html">
+                        <img src="https://iili.io/2BIBCN4.jpg" alt="Assemble" />
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="album-01-ACCESS.html">
+                        <img src="https://iili.io/2BIB3KX.jpg" alt="Acid Angel from Asia - Access" />
+                    </a>
+                </div>
+
+                <div class="indicators">
+                    <button data-slide="0" class="active"></button>
+                    <button data-slide="1"></button>
+                    <button data-slide="2"></button>
+                    <button data-slide="3"></button>
+                    <button data-slide="4"></button>
+                    <button data-slide="5"></button>
+                    <button data-slide="6"></button>
+                    <button data-slide="7"></button>
+                    <button data-slide="9"></button>
+                    <button data-slide="10"></button>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="subtext">
+            <h2>우리는 하나이자 스물넷입니다.</h2>
+            <h2>We are one and twenty-four.
+                <h2 />
+        </div>
+        <img src="logo/logo-assemble24.png" id="assemble24-logo" alt="assemble24 logo">
+    </section>
+    <div class="row">
+        <div class="column">
+            <a href="member-s01.html"><img src="https://iili.io/2BIKPOQ.jpg" alt="Seoyeon"></a>
+            <a href="member-s05.html"><img src="https://iili.io/2BIf2zN.jpg" alt="Yooyeon"></a>
+            <a href="member-s09.html"><img src="https://iili.io/2BIfndG.jpg" alt="Kaede"></a>
+            <a href="member-s13.html"><img src="https://iili.io/2BIf71e.jpg" alt="Nien"></a>
+            <a href="member-s17.html"><img src="https://iili.io/2BIfekv.jpg" alt="Lynn"></a>
+            <a href="member-s21.html"><img src="https://iili.io/2BIqfjV.jpg" alt="Chaewon"></a>
+        </div>
+
+        <div class="column">
+            <a href="member-s02.html"><img src="https://iili.io/2BIK65x.jpg" alt="Hyerin"></a>
+            <a href="member-s06.html"><img src="https://iili.io/2BIf3XI.jpg" alt="Soomin"></a>
+            <a href="member-s10.html"><img src="https://iili.io/2BIfxe4.jpg" alt="Dahyun"></a>
+            <a href="member-s14.html"><img src="https://iili.io/2BIfYru.jpg" alt="Sohyun"></a>
+            <a href="member-s18.html"><img src="https://iili.io/2BIqJ3u.jpg" alt="Joobin"></a>
+            <a href="member-s22.html"><img src="https://iili.io/2BIqnG1.jpg" alt="Sullin"></a>
+        </div>
+
+        <div class="column">
+            <a href="member-s03.html"><img src="https://iili.io/2BIK4Jj.jpg" alt="Jiwoo"></a>
+            <a href="member-s07.html"><img src="https://iili.io/2BIf95v.jpg" alt="Nakyoung"></a>
+            <a href="member-s11.html"><img src="https://iili.io/2BIfo7f.jpg" alt="Kotone"></a>
+            <a href="member-s15.html"><img src="https://iili.io/2BIfcdb.jpg" alt="Xinyu"></a>
+            <a href="member-s19.html"><img src="https://iili.io/2BIfLvf.jpg" alt="Hayeon"></a>
+            <a href="member-s23.html"><img src="https://iili.io/2BIqz3g.jpg" alt="Seoah"></a>
+        </div>
+
+        <div class="column">
+            <a href="member-s04.html"><img src="https://iili.io/2BIKgUb.jpg" alt="Chaeyeon"></a>
+            <a href="member-s08.html"><img src="https://iili.io/2BIfJbp.jpg" alt="Yubin"></a>
+            <a href="member-s12.html"><img src="https://iili.io/2BIfuXS.jpg" alt="Yeonji"></a>
+            <a href="member-s16.html"><img src="https://iili.io/2BIf0kx.jpg" alt="Mayu"></a>
+            <a href="member-s20.html"><img src="https://iili.io/2BIqdYb.jpg" alt="Shion"></a>
+            <a href="member-s24.html"><img src="https://iili.io/2BIqo6F.jpg" alt="Jiyeon"></a>
+        </div>
+
+    </div>
+    <div id="carousel-container"></div>
+</body>
+
+</html>

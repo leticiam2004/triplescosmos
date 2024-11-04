@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S13 | NIEN</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="logo/triples.png">
+    <script>
+        // Step 1: Load the header from an external HTML file
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("header.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.body.insertAdjacentHTML("afterbegin", data);
+
+                    // Step 2: Add the sticky effect once the header is inserted
+                    var header = document.querySelector("header");
+
+                    // Ensure header exists before adding scroll listener
+                    if (header) {
+                        window.addEventListener("scroll", function () {
+                            header.classList.toggle("sticky", window.scrollY > 0);
+                        });
+                    }
+                })
+                .catch((error) => console.error("Error loading header:", error));
+        });
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.body.insertAdjacentHTML("beforeend", data); // Insert footer at the end of body
+            })
+            .catch((error) => console.error("Error loading footer:", error));
+    </script>
+</head>
+
+<body>
+
+    <section class="banner-member">
+        <div>
+            <img src="https://iili.io/2BI2ntt.jpg" alt="Nien" />
+            <h1 class="banner-text">Nien</h1>
+        </div>
+    </section>
+    
+    <section class="member-info">
+        <!-- info -->
+
+        <h1>Nien</h1>
+        <div class="name-btn" id="muhan">
+            <a href="album-04-MUHAN.html">LOVElution</a>
+        </div>
+        <div class="name-btn" id="structureofsadness">
+            <a href="album-06-StructureOfSadness.html">Aria</a>
+        </div>
+        <div class="name-btn" id="performante">
+            <a href="album-10-PERFORMANTE.html">Vision@ry Vision</a>
+        </div>
+        <div class="info-row">
+            <div class="info-column">
+                <p></p>
+                <p></p>
+            </div>
+            <div class="info-column">
+                <h1>Profile</h1>
+                <table>
+                    <tr>
+                        <th>이름 | Name</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>국적 | Nationality</th>
+                        <td>대한민국 | Republic of Korea</td>
+                    </tr>
+                    <tr>
+                        <th>생일 | Birthday</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>MBTI</th>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <div id="member-carousel-container"></div>
+</body>
+
+</html>
